@@ -1,8 +1,17 @@
-.maincontainer {
-    background-color: lavender;
+.urbanist-body {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2200;
+  font-style: normal;
 }
 
-.col, 
-.col-6 {
-    border: solid black 4px;
+@font-face {
+    font-family: "Retro60";
+    src: local("Retro60"),
+    url(fonts/Retro60Prime.ttf) format("truetype");
+}
+
+h1 {
+    font-family: Retro60;
+    font-size: 32pt;
 }
