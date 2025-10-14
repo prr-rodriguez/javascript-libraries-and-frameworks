@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slideshow using Splide.js</title>
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <main>
+        <h1 class="title urbanist-body">Slideshow using Splide.js</h1>
+        <section id="image-carousel" class="splide" aria-labelledby="carousel-heading" aria-label="Fall Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                        <img src="img/fall-leaves.png" alt="leaves">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <img src="img/mushroom.png" alt="mushroom">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <img src="img/field.png" alt="field">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <img src="img/changing-pines.png" alt="pine">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="js/splide.min.js"></script>
+     <script>
+        new Splide( '#image-carousel' , {
+		    heightRatio: 0.5,
+        } ).mount();
+    </script>
+  </body>
+</html>
